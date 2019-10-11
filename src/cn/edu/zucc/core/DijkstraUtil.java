@@ -160,16 +160,15 @@ public class DijkstraUtil {
 
                     if(station.getStationName().equals(begin)){     //根据传入参数，确定起点，并加入到routine之中
                         routine.setBeginStation(station);
-                        continue;
                     }
 
                     if(station.getStationName().equals(end)){       //根据传入参数，确定终点，并加入到routine之中
                         routine.setEndStation(station);
-                        continue;
                     }
                 }
             }
         }
+
 
         if (routine.getBeginStation().equals(routine.getEndStation())){ //一些异常情况的处理
             System.out.println("起点与终点相同，请重新输入");

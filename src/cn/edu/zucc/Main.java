@@ -60,6 +60,7 @@ public class Main {
                     System.out.println("验证参数格式！");
                 }
                 break;
+            default:System.out.println("验证参数格式！");
         }
     }
 }
